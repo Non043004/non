@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar-fixed -->
+    <header class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper pink lighten-4">
+                <div class="container">
+                    <a href="#!" class="brand-logo"><i class="material-icons"
+                            style="font-size: 50px;">favorite</i>Favorites</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="picture2.0.html" style="font-size: large;">Picture</a></li>
+                        <li><a href="badges.html" style="font-size: large;">Video</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="picture2.0.html"><i class="material-icons">insert_photo</i>Picture</a></li>
+            <li><a href="badges.html"><i class="material-icons">play_circle_filled</i>Video</a></li>
+        </ul>
+    </header>
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="tokyotreat_sakura-tree-thumbnail.webp"
+                style="transform: translate3d(-50%, 367.616px, 0px); opacity: 1;">
+        </div>
+    </div>
+    <div>
+        <h2 style="font-weight: 500;">Cherry Blossom</h2>
+        <div class="card-panel pink lighten-4">
+            <p class="flow-text white-text">Sakura means “cherry blossom” and is derived from saku 咲, which means to bloom, or alternately to smile/laugh. The 口 in 咲 indicates an open mouth.
+            </p>
+            <p class="flow-text white-text">It is also contradictory. It symbolizes both life and death, beauty and violence. As the coming of spring promises new life, so the blooming of cherry blossoms brings a sense of vitality and vibrancy. At the same time, their short lifespan is a reminder that life is fleeting.</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="fuji-and-sakura-royalty-free-image-144483163-1562593125.jpg"
+                style="transform: translate3d(-50%, 367.616px, 0px); opacity: 1;">
+        </div>
+    </div>
+
+
+    <br><br>
+    <!-- footer -->
+    <footer class="page-footer pink lighten-4">
+        <div class="container"> 
+            <div class="row">
+                <div class="col l6 s12">
+                    <h3 class="white-text center">Flowers</h3>
+                    <p>With their colorful and beautiful blooms, flower meanings are often synonymous with joy and pleasure. However, different types and colors of flowers bring unique meanings. Some flowers are seen as symbols of friendship and purity, while others are tied to forgiveness and death.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h3 class="white-text center">Links</h3>
+                    <ul>
+                        <li class="center"><a class="white-text" href="#!">link 1</a></li>
+                        <li class="center"><a class="white-text" href="#!">link 2</a></li>
+                        <li class="center"><a class="white-text" href="#!">link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 Copyright Text <a class="white-text right" href="#!">More</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <div style="height: 50px;"></div>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+
+</html>
