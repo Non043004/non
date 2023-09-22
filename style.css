@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+    color:#f48fb1;
+}
+
+
+p {color: #616161;
+}
+
+.qwerty{
+    display: inline-flex;
+    margin-right: 90%;
+}
+
+.qwerty>ul {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.ytrewq{
+    display: inline-flex;
+    margin-right: 90%;
+}
+
+.ytrewq>ul {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+

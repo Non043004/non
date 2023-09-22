@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- fonts awesome -->
+  <script src="https://kit.fontawesome.com/9dec5ec37d.js" crossorigin="anonymous"></script>
+
+  <!-- fonts google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Grp1-Drop-Menu.css">
+
+  <title>Group-1</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Navbar Dropdown Menu</h1>
+    <p>
+      To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.
+    </p><br><br>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a id="game1" href="#!">Game 1</a></li>
+      <li><a id="game2" href="#!">Game 2</a></li>
+      <li class="divider"></li>
+      <li><a id="game3" href="#!">Game 3</a></li>
+    </ul>
+    <nav id="dropdown-nav">
+      <div class="nav-wrapper">
+        <a id="itch" href="#!" class="brand-logo">
+          <i class="fa-brands fa-itch-io" style="color: #000000;"> itch.io</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a id="community">Community</a></li>
+          <li><a id="dev">Developer Logs</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a id="browse" class="dropdown-trigger" data-target="dropdown1">Browse Games<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav><br>
+    <h5>Latest Featured Games</h5>
+    <div id="image-container">
+      <img src="c:\Users\User\Pictures\Screenshot 2023-09-19 140900.png">
+    </div>
+  </div>
+
+
+  <!-- functions -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('.dropdown-trigger').dropdown();
+  });
+</script>
+</body>
+</html>

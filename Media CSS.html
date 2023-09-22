@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Media CSS</h1>
+    </div>
+
+
+    <div class="divider"></div>
+    <br>
+
+    <!-- images -->
+    <div class="container">
+        <h3>Images</h3>
+        <p>Images can be styled in different ways using Materialize</p>
+        <img src="sunset.jpg" alt class="responsive-img valign">
+        <br>
+        <h5>Responsive Images</h5>
+        <p>To make images resize responsively to page width, you can add the class responsive-img to your image tag. It
+            will now have a max-width: 100% and height:auto.
+        </p>
+        <br>
+        <!-- circular images -->
+        <h5>Circular Images</h5>
+        <div class="row">
+            <div class="col s12 m8">
+                <div class="card-panel grey-darken-2 z-depth-1">
+                    <div class="row valign-wrapper">
+                        <div class="col s4 m2">
+                            <img src="sunset.jpg" alt class="circle responsive-img valign">
+                        </div>
+                        <div class="col s8 m10">
+                            <span class="black-text">This is a square image. Add the "circle" class to it to make it appear circular.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <p>To make images appear circular, simply add <code class=" language-markup">class="circle"</code> to them</p>
+            </div>
+        </div>
+        <br>
+        <!-- videos -->
+        <h3>Videos</h3>
+        <p>We provide a container for Embedded Videos that resizes them responsively.</p>
+        <br>
+        <h5>Responsive Embeds</h5>
+        <p>To make your embeds responsive, merely wrap them with a containing div which has the class video-container</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V40ZGh7g2W4?si=KU4XqDy2Ch92Nhxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br>
+        <h5>Not Responsive Videos</h5>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V40ZGh7g2W4?si=KU4XqDy2Ch92Nhxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br>
+        <h5>Responsive Video</h5>
+        <p>To make your HTML5 Videos responsive just add the class responsive-video to the video tag.</p>
+        <video width="100%" controls>
+            <source src="https://www.youtube.com/watch?v=V40ZGh7g2W4&ab_channel=Jafreli" type="video/mp4">
+        </video>
+    </div>
+
+
+
+
+    <div style="height: 400px;"></div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

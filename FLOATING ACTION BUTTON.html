@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>baluga</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Floating Action Button</h1>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+        <p>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo
+            is in the bottom righthand corner of the page.</p>
+        <br>
+        <div class="floating-action-btn qwerty">
+            <a class="btn-floating btn-large pink">
+                <i class="large material-icons">add</i>
+            </a>
+            <ul>
+                <li>
+                    <a class="btn-floating pink">
+                        <i class="material-icons">done</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating pink">
+                        <i class="material-icons">done</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating pink">
+                        <i class="material-icons">done</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating pink">
+                        <i class="material-icons">done</i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <h2>hoverEnabled</h2>
+        <div class="floating-action-btn ytrewq">
+            <a class="btn-floating btn-large pink">
+                <i class="large material-icons">add</i>
+            </a>
+            <ul>
+                <li>
+                    <a class="btn-floating pink">
+                        <i class="material-icons">done</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating pink">
+                        <i class="material-icons">done</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating pink">
+                        <i class="material-icons">done</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating pink">
+                        <i class="material-icons">done</i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <br>
+        <div class="divider"></div>
+        <div>
+            <iframe src="toolbarEnabled.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.qwerty').floatingActionButton({
+                direction: 'right'
+            });
+            $('.ytrewq').floatingActionButton({
+                hoverEnabled: false,
+                direction: 'right'
+            });
+        });
+    </script>
+
+
+    <div style="height: 10px;"></div>
+</body>
+</html>

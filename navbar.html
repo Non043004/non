@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Navbar</h1>
+    </div>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts
+            of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or
+            right.</p>
+    </div>
+    <br>
+    <div class="container">
+        <!-- right aligned links -->
+        <h3>Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.
+        </p>
+    </div>
+    <div class="container">
+        <nav>
+            <div class="nav wrapper">
+                <a href="#" class="brand-logo"><i class="fab fa-paypal medium"></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html" style="font-size: large;">Withdraw</a></li>
+                    <li><a href="badges.html" style="font-size: large;">Send</a></li>
+                    <li><a href="collabsible.html" style="font-size: large;">Cash In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container">
+        <!-- left aligned links -->
+        <h3>Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+        <nav>
+            <div class="nav wrapper">
+                <a href="#" class="brand-logo right" style="right: 16%;">Facebook</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="sass.html" style="font-size: large;">Home</a></li>
+                    <li><a href="badges.html" style="font-size: large;">Message</a></li>
+                    <li><a href="collabsible.html" style="font-size: large;">Notification</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- centering the logo -->
+        <h3>Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add
+            the center class to your <'a class="brand-logo">. You will have to make sure yourself that links do not
+                overlap if you use this.</p>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center"><i class="material-icons"
+                        style="font-size: 50px;">location_on</i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="sass.html" style="font-size: large;">West</a></li>
+                    <li><a href="badges.html" style="font-size: large;">South</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="badges.html" style="font-size: large;">North</a></li>
+                    <li><a href="collapsible.html" style="font-size: large;">East</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container">
+        <!-- active items -->
+        <h3>Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center"><i class="material-icons"
+                        style="font-size: 50px;">access_time</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="sass.html" style="font-size: large;">Hours</a></li>
+                    <li class="active"><a href="badges.html" style="font-size: large;">Minutes</a></li>
+                    <li class="active"><a href="collapsible.html" style="font-size: large;">Seconds</a></li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="badges.html" style="font-size: large;">A.M.</a></li>
+                    <li><a href="collapsible.html" style="font-size: large;">P.M.</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container">
+        <!-- extended navbar with tabs -->
+        <h3>Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow
+            your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <nav class="nav-extender">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <i class="material-icons" style="font-size: 50px;">format_color_text</i>
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html" style="font-size: large;">Create</a></li>
+                    <li><a href="badges.html" style="font-size: large;">Edit</a></li>
+                    <li><a href="collapsible.html" style="font-size: large;">Delete</a></li>
+                </ul>
+            </div>
+            <div class="nav-content pink">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="#test1" class="active">Note 1</a></li>
+                    <li class="tab"><a class="active" href="#test2">Note 2</a></li>
+                    <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+                    <li class="tab"><a href="#test4" class>Note 4</a></li>
+                    <li class="indicator" style="left: 120px; right: 278;"></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col s12">
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="sass.html"><i class="material-icons" style="font-size: 50px;">create</i>Create</a></li>
+                    <li><a href="badges.html"><i class="material-icons" style="font-size: 50px;">brush</i>Edit</a></li>
+                    <li><a href="collapsible.html"><i class="material-icons"
+                                style="font-size: 50px;">delete</i>Delete</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="test1" class="col s12 active" style="display: block;">
+            <i class="material-icons large">note</i>
+        </div>
+        <div id="test2" class="col s12 disabled" style="display: none;"><i class="material-icons large">book</i>
+        </div>
+        <div id="test3" class="col s12 active" style="display: none;">
+            <p>Note 3</p>
+        </div>
+        <div id="test4" class="col s12 active" style="display: none;"><i class="material-icons large">chat</i>
+        </div>
+    </div>
+
+
+
+
+
+    <div style="height: 400px;"></div>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.tabs').tabs();
+        });
+    </script>
+</body>
+
+</html>

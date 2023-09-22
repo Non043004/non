@@ -1,0 +1,29 @@
+body {
+  background-color: #dddada;
+}
+
+#dropdown-nav {
+  padding: 0;
+  background-color: white;
+}
+
+#itch {
+  padding-left: 60px;
+}
+
+#community, #dev, #browse {
+  color: black;
+}
+
+#name {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#game1, #game2, #game3 {
+  color: black;
+}

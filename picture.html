@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="katawan.css">
+    <title>picture</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="white purple-text lighten-5 center" style="font-weight: 600;">Picture</h1>
+    </header>
+    <div class="divider"></div>
+    <p class="flow-text center white">I will presenting to everyone, my favorite girl... my KAIBIGAN.</p>
+    <br>
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="she.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="my boo.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="mine.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="her.jpg"></a>
+    </div>
+    <br><br>
+    <div class="divider"></div>
+    <h2 class="magenta-text white center">"Just like the flower, she's beautiful"</h2>
+    <div class="container">
+        <img class="materialboxed responsive-img" width="900" src="pexels-brett-sayles-992734.jpg">
+    </div>
+
+
+
+
+
+
+    <div style="height: 200px;"></div>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                duration: 200,
+                dist: 150,
+                shift: 70
+                
+            });
+            $('.materialboxed').materialbox();
+        });
+    </script>
+</body>
+
+</html>
